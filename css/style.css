@@ -9,10 +9,16 @@
     font-family: 'Orbitron', sans-serif;
 }
 
+.date{
+    font-size: 25px;
+    font-weight: bolder;
+    color: var(--bg-dark);
+}
+
 .clock{
     font-size: 60px;
     font-weight: bolder;
-    color: #000000;
+    color: var(--bg-dark);
 }
 
 .dark-mode{
@@ -20,6 +26,10 @@
     color: var(--text-blue) !important;
 }
 .dark-mode .clock{
+    color: var(--text-blue) !important;
+}
+
+.dark-mode .date{
     color: var(--text-blue) !important;
 }
 

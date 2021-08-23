@@ -1,8 +1,21 @@
+function showDate() {
+    const d = new Date();
+    const monthsArr = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+    let months = d.getMonth();
+    let date = d.getDate();
+    let month = monthsArr[months];
+    let year = d.getFullYear();
+    let today = date+ " " + month + " " + year;
+
+    let todayDate = document.getElementById("date");
+    todayDate.innerHTML = today;
+}
+
 function showTime(){
-    let date = new Date();
-    let hours = date.getHours();
-    let min = date.getMinutes();
-    let sec  = date.getSeconds();
+    const d = new Date();
+    let hours = d.getHours();
+    let min = d.getMinutes();
+    let sec  = d.getSeconds();
     let session = "AM";
 
     if(hours > 12){
@@ -40,3 +53,4 @@ function changeMode(){
 
 
 showTime();
+showDate();
